@@ -67,7 +67,8 @@ az network application-gateway create \
         --public-ip-address $PIPNAME \
         --vnet-name $VNETNAME \
         --subnet $SUBNETNAME \
-        --servers $Niclist
+        --servers $Niclist \
+        --private-ip-address 10.0.1.200
 
 #Update Application Gateway Setting
 az network application-gateway probe create \
